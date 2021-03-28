@@ -1,0 +1,27 @@
+2. Tuliskan perintah-perintah untuk mencari nama file di dalam satu folder.
+
+A. Find
+
+find -iname "filename"
+use iname to ignore case sensitive on filename
+use name to pay attention for case sensitive on filename
+---
+search from root directory
+find /directory -iname "filename"
+/directory = /users/data or ./data when this search is doing on destination directory or subdirectory
+---
+wildcard *
+find /directory/subdirectory -iname "*filename"
+same as "like" which exist in sql to search for a specified pattern and return all specified filename
+
+B. Locate
+
+locate -i "filename"
+same as find but it doesn't have many option as find
+i is for ignore case sensitive
+
+3. Tuliskan perintah untuk mencari variable di dalam satu file.
+
+cat "filename" | grep "variable_name"
+
+read file and get specific variable name with grep
