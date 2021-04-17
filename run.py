@@ -21,8 +21,8 @@ def main() -> None:
     years_list = ["2006", "2007", "2008", "2011", "2013", "2017", "2019", "2020"]
 
     for item in range(3, len(years_list)):
-        if item > 2 and item < 6 :
-            df = transformer.transform_2011to2017(dfs[item], years_list[item])
+        if item > 2 and item < 6 :  
+            df = transformer.transform_2011to2017   (dfs[item], years_list[item])
             data_list.append(df)
         if item > 5 :
             df = transformer.transform(dfs[item], years_list[item])
