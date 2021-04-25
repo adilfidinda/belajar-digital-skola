@@ -32,7 +32,7 @@ send_email = EmailOperator(
         to='fia.digitalskola@gmail.com',
         subject='Dinda_DigitalSkola_Airflow',
         html_content=""" <h3>Dinda_DigitalSkola_Airflow</h3> """,
-        files = ['orang_terkaya2020.csv'],
+        files = ['list_orang_terkaya_di_indonesia.csv'],
         dag=dag
 )
 
